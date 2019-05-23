@@ -3,7 +3,14 @@
 html, body {
   height: 100%;
 }
-
+.navbar-toggler{
+ .material-icons{
+   color: #fff;
+ }
+}
+nav .navbar-collapse.collapsing ul, nav .navbar-collapse.show ul {
+  margin-top: 0rem !important;
+}
 #top_10{
   display: none !important;
 }
