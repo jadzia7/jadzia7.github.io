@@ -1,15 +1,16 @@
 @import 'modules/variable';
 @import 'modules/stanadrize';
+@import 'particial/section';
 html, body {
   height: 100%;
 }
 .navbar-toggler{
+  &:focus{
+    outline: #fff;
+  }
  .material-icons{
    color: #fff;
  }
-}
-nav .navbar-collapse.collapsing ul, nav .navbar-collapse.show ul {
-  margin-top: 0rem !important;
 }
 #top_10{
   display: none !important;
@@ -41,24 +42,43 @@ nav.fixed-top {
 nav.bg-primary li a {
   color: #fff !important;
 }
-nav li a{
-  padding: .2rem .4rem;
-  border-radius: 0;
-  margin: .3rem 0.6rem;
-  color: #fff, !important;
+.navbar-nav{
+  .nav-item{
+    .nav-link {
+      @media only screen and (max-width: 767px) {
+        padding: .2rem .4rem;
+      }
+      &.active{
+        background-color: #663d5f;
+      }
+    }
+  }
 }
-nav li a.active {
-  color: #fff, !important;
-  background-color: #663d5f;
-}
-nav .navbar-collapse.collapsing ul,
-nav .navbar-collapse.show ul {
-  margin-top: 3rem;
-}
-nav .navbar-collapse.collapsing li a,
-nav .navbar-collapse.show li a  {
-  padding: 0.5rem;
-}
+// nav li a{
+//   padding: .2rem .4rem;
+//   border-radius: 0;
+//   margin: .3rem 0.6rem;
+//   color: #fff, !important;
+// }
+// .nav-link{
+//   &.active{
+//     margin: .3rem 0.6rem !important;
+//   }
+// }
+// nav li a.active {
+//   color: #fff !important;
+//   background-color: #663d5f;
+//   padding: .2rem .4rem;
+//   margin: .3rem 0.6rem;
+// }
+// nav .navbar-collapse.collapsing ul,
+// nav .navbar-collapse.show ul {
+//   margin-top: 0.1rem;
+// }
+// nav .navbar-collapse.collapsing li a,
+// nav .navbar-collapse.show li a  {
+//   padding: 0.5rem;
+// }
 
 nav .navbar-collapse.show li a.active  {
   margin: 0;
@@ -74,7 +94,11 @@ nav .navbar-collapse.show li a.active  {
   color: #fff;
 }
 .section{
-  height: 100%;
+  min-height: 100vh;
+  padding: 20px 0;
+  @media only screen and (min-height: 900px) and (min-width: 700px) {
+    height: 100%;
+  }
 }
 
 #home{

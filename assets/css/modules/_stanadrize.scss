@@ -5,3 +5,13 @@ img{
   width: 100%;
   height: auto;
 }
+
+a{
+  color: $purple;
+  transition: all ease-in-out 0.3s;
+  &:hover{
+    opacity: 0.7;
+    color: #000;
+    text-decoration: none;
+  }
+}

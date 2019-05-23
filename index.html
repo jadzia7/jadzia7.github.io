@@ -9,6 +9,7 @@
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
   <link href="https://cdn.jsdelivr.net/gh/arbati6/frino@1.0.1/frinostyle.min.css" rel="stylesheet">
   <link rel="stylesheet" href="./assets/css/style.min.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
       rel="stylesheet">
 </head>
@@ -29,16 +30,16 @@
         <a class="nav-link active" href="#home">Home</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="#aboutme">About me</a>
+        <a class="nav-link" href="#aboutme">O mnie</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="#skills">Skills</a>
+        <a class="nav-link" href="#skills">Umiejętności</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="#services">Services</a>
+        <a class="nav-link" href="#services">Usługi</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="#contact">Contact</a>
+        <a class="nav-link" href="#contact">Kontakt</a>
       </li>
     </ul>
   </div>
@@ -48,34 +49,36 @@
   <div class="container">
     <div class="row align-items-center">
       <div class="col">
-          <h2>Jadwiga Kalinowska</h2>
+          <h2 class="title-section title-section--home">Jadwiga Kalinowska</h2>
           <h5 class="wow fadeIn text-normal">Junior Front-End Developer</h5>
           <br>
-          <a href="#section1" class="btn btn-primary btn-xl page-scroll wow fadeInUp">Dowiedz się więcej</a>
+          <a href="#aboutme" class="btn btn-primary btn-xl page-scroll wow fadeInUp">Dowiedz się więcej</a>
        </div>
       </div>
     </div>
   </div>
 </div>
-<div class="container-fluid section" style="height: 100%;" id="aboutme">
+<div class="container-fluid section" id="aboutme">
   <div class="container text-center">
     <div class="row align-items-center">
       <div class="col">
-          <h2>O mnie</h2>
+          <h2 class="title-section title-section--aboutme">O mnie</h2>
           <p class="lead">
              Nazywam się Jadwiga Kalinowska i od kilku lat interesuje się aplikacjami webowymi.
-            <br>
+            <br><br>
              Jestem absolwentem studiów I i II (specjalizacja aplikacje internetowe) stopnia kierunku Informatyka na Wydziale Elektrotechniki i Informatyki Politechniki Lubelskiej.
+            <br><br>
+             Posiadam 7 miesięczne komercyjne doświadczenie na stanowisku Junior Front-End Developer. Do moich głównych zadań należało cięcie do HTML/CSS/JS, wdrażanie systemów CMS - Wordpress, Shoper oraz wykonywanie mailingów.
            </p>
       </div>
     </div>
   </div>
 </div>
-<div class="container-fluid section" style="height: 100%; background-color: #fefefe" id="skills">
+<div class="container-fluid section section-skills"id="skills">
   <div class="container text-center">
     <div class="row align-items-center">
       <div class="col">
-          <h2>Umiejętności</h2>
+          <h2 class="title-section title-section--skills">Umiejętności</h2>
           <div class="row">
               <div class="col-md-6 col-sm-12"> <p>HTML5</p> </div>
               <div class="col-md-6 col-sm-12"> <p>ES6 / JavaScript / jQuery</p> </div>
@@ -99,33 +102,38 @@
     </div>
   </div>
 </div>
-<div class="container-fluid section" style="height: 100%;" id="services">
+<div class="container-fluid section section-services" id="services">
   <div class="container text-center">
     <div class="row align-items-center">
       <div class="col">
-        <h1 class="text-light">Usługi</h1>
+        <h1 class="title-section title-section--services">Usługi</h1>
         <div class="row">
-          <div class="col-md-6 col-sm-12"> <p>Cięcie szablonów stron internetowych do HTML/CSS/JS</p> </div>
-          <div class="col-md-6 col-sm-12"> <p>Wdrażanie systemów CMS
-            <ul>
-              <li>tworzenie nowych szablonów</li>
-              <li>tworzenie custom post</li>
-              <li>tworzenie formularzy z wykorzytaniem Contact From 7</li>
-              <li>tworzenie formularzy wieloetapowych z CF7</li>
-              <li>tworzenie wielojęzycznych stron</li>
-            </ul>
+          <div class="col-md-4 col-sm-12"> 
+            <div class="icon--block">
+                <i class="fas fa-laptop-code fa-5x"></i>
+            </div>
+            <p>Cięcie szablonów stron internetowych do HTML/CSS/JS</p> </div>
+          <div class="col-md-4 col-sm-12">
+            <div class="icon--block">  
+                  <i class="fab fa-wordpress-simple fa-5x"></i>
+            </div>
+            <p>Wdrażanie systemów CMS - Wordpress
           </p> </div>
-          <div class="col-md-6 col-sm-12"> <p>PHP</p> </div>
+          <div class="col-md-4 col-sm-12 ">
+              <div class="icon--block">
+                  <i class="far fa-envelope fa-5x"></i>
+              </div>
+            <p>Wykonywanie mailingów</p> </div>
         </div>
       </div>
     </div>
   </div>
 </div>
-<div class="container-fluid section" style="height: 100%;" id="contact">
+<div class="container-fluid section" id="contact">
     <div class="container text-center">
       <div class="row align-items-center">
         <div class="col">
-            <h2>Kontakt</h2>
+            <h2 class="title-section title-section--contact">Kontakt</h2>
             <p>Jeśli chcesz mnie zatrudnić w swojej firmie, pisz na adres <strong>7jadzia7@gmai.com</strong>
                <br> Czekam na Twoją wiadomość!</p>
                <a class="button-contact" target="_blank" href="mailto:7jadzia7@gmai.com">Napisz do mnie</a>
@@ -134,7 +142,7 @@
     </div>
   </div>
 <footer>
-    <a href="https://www.freepik.com/free-photos-vectors/background">Background vector created by alicia_mb - www.freepik.com</a>
+    <a href="https://www.freepik.com/free-photos-vectors/background"  target="_blank">Background vector created by alicia_mb - www.freepik.com</a>
 </footer>
 
 <!-- Scripts -->
