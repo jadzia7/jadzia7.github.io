@@ -1,0 +1,73 @@
+#top_10{
+  display: none !important;
+}
+html, body{
+  height: 100%;
+}
+.bg-custom-1 {
+  background-color: #85144b;
+}
+
+.bg-custom-2 {
+background-image: linear-gradient(15deg, #13547a 0%, #80d0c7 100%);
+}
+.navbar-collapse{
+  justify-content: flex-end;
+}
+.navbar{
+  background-color: #1f1321 !important;
+}
+section{
+  height: 100%;
+  padding-top: 70px;
+}
+header {
+  position: relative;
+  min-height: auto;
+  text-align: center;
+  color: #fff;
+  width: 100%;
+  height: 100%;
+  background-color: #000;
+  background-size: cover;
+}
+header .header-content {
+  position: relative;
+  max-width: 1200px;
+  margin: 0 auto;
+  width: 100%;
+  height: 100%;
+  text-align: right;
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: center;
+  h2{
+  font-weight: 100;
+  font-size: 30px;
+  }
+  h5{
+    font-weight: 300;
+    font-size: 22px;
+  }
+  .btn{
+    &.page-scroll{
+      background-color: #1f1321;
+      border-color: #1f1321;
+      border-radius: 0;
+      padding: 10px 15px;
+      &:focus {
+        box-shadow: 0 0 0 0.2rem #663d5f;
+      }
+      &:hover{
+        background-color: #fff;
+        border-color: #fff;
+        color: #1f1321;
+      }
+    }
+  }
+}
+
+@import 'modules/variable';
+@import 'modules/stanadrize';
